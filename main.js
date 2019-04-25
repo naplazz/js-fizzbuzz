@@ -5,7 +5,6 @@
 //   multipli di 3 che di 5 stampi FizzBuzz.”
 
 
-
 // creo la variabile 1
 var number = 1;
 
@@ -15,14 +14,14 @@ while (number <= 100) {
 //diviso per 3, è uguale a 0 significa che
 //il numero in quesitone è multiplo di 3, quindi stampa "Fizz"
   if (number % 3 === 0) {
-    console.log("Fizz")
+    console.log("Fizz");
 
 // // condizione 3: se il resto del numero,
 // diviso per 5, è uguale a 0,
 // significa che è multiplo di 5, quindi stampa: "Buzz"
   } else if (number % 5 === 0) {
 
-    console.log("Buzz")
+    console.log("Buzz");
 // in tutti gli altri casi, stampa in numero
   } else {
     console.log(number);
