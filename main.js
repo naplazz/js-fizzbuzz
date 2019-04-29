@@ -10,20 +10,24 @@ var number = 1;
 
 // condizione 1: se il numero è minore o uguale a 100, incrementa di 1
 while (number <= 100) {
-// condizione 2: se il resto del numero
+// condizione 2: se il resto del numero,
 //diviso per 3, è uguale a 0 significa che
 //il numero in quesitone è multiplo di 3, quindi stampa "Fizz"
-  if (number % 3 === 0) {
+  if (number % 3 === 0 && number % 5 != 0) {
     console.log("Fizz");
 
-// // condizione 3: se il resto del numero
+// // condizione 3: se il resto del numero,
 // diviso per 5, è uguale a 0,
 // significa che è multiplo di 5, quindi stampa: "Buzz"
-  } else if (number % 5 === 0) {
+} else if (number % 5 === 0 && number % 3 != 0) {
 
     console.log("Buzz");
 // in tutti gli altri casi, stampa in numero
-  } else {
+} else if (number % 5 === 0 && number % 3 === 0) {
+
+  console.log("FizzBuzz")
+
+} else {
     console.log(number);
 
   }
